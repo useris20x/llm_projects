@@ -46,9 +46,8 @@ A list of messages representing a conversation between the user and the assistan
 - User message: Initiates a query about the main trends in recent news on Yahoo.
 """
 messages = [
-    {"role": "system", "content": f"You are a helpful assistant with access to functions." 
-     															"Use them if required."},
-    {"role": "user", "content": "What is the main trends in the recent news on yahoo finance? "}
+    {"role": "system", "content": f"You are a helpful assistant with access to functions. Use them if required."},
+    {"role": "user", "content": "What are the main trends in the recent news on yahoo finance? "}
 ]
 
 
@@ -56,7 +55,7 @@ tools = [ {
         "type": "function",
         "function": {
             "name": "get_yahoo_trends",
-            "description": "Get list of recent news from yahoo along with title, link, description, pubDate",
+            "description": "Get the list of recent news from Yahoo along with title, link, description, pubDate",
             "parameters": {
                 "type": "object",
                 "properties": {

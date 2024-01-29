@@ -12,7 +12,7 @@ def get_yahoo_trends(news_type: str):
     """
     Retrieves recent news from Yahoo based on the specified news_type.
     Args:
-        news_type (str): The category of news, such as "news," "finance," or "sports."
+        news_type (str): The category of news, such as "news", "finance" or "sports"
     Returns:
         str: A JSON-formatted string containing a list of dictionaries, each representing a news item
              with 'title', 'link', and 'pubDate' as key-value pairs.
@@ -43,7 +43,7 @@ def get_yahoo_trends(news_type: str):
 A list of messages representing a conversation between the user and the assistant.
 
 - System message: Describes the assistant's role and capabilities, encouraging the use of available functions.
-- User message: Initiates a query about the main trends in recent news on Yahoo News.
+- User message: Initiates a query about the main trends in recent news on Yahoo.
 """
 messages = [
     {"role": "system", "content": f"You are a helpful assistant with access to functions." 

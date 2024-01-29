@@ -5,7 +5,7 @@ import openai
 
 client = openai.OpenAI(
     base_url = "https://api.fireworks.ai/inference/v1",
-    api_key = "dxGcA2BdISdz9HEW8YcL34pdi2BtFfKdKLG7IoFcGlrkLOkO"
+    api_key = "API-KEY"
 )
 
 def get_yahoo_trends(news_type: str):

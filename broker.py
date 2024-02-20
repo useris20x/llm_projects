@@ -208,7 +208,7 @@ for question in questions:
 
     messages.append(
         {
-            "role": "function",
+            "role": "tool",
             "content": json.dumps(tool_response)
         }
     )
